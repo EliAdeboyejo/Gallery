@@ -45,3 +45,17 @@
     transform: scale(1.1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
+
+  @media only screen and (max-width: 559px) {
+    .picture {
+      width: 90%;
+      margin-left: 5%;
+      height: 250px;
+    }
+
+    .gallery-img {
+      width: 20vw;
+    }
+
+    
+  }  
