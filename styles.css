@@ -1,0 +1,47 @@
+.picture {
+    display: none;
+    width: 75%;
+    margin-left: 12.5%;
+    border-radius: 20px;
+    height: 500px;
+  }
+
+  .picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .labels {
+    margin-left: 12.5%;
+    margin-top: 20px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  .gallery-img {
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  input#toggler1:checked ~ .gallery .picture1,
+  input#toggler2:checked ~ .gallery .picture2,
+  input#toggler3:checked ~ .gallery .picture3,
+  input#toggler4:checked ~ .gallery .picture4,
+  input#toggler5:checked ~ .gallery .picture5 {
+    display: block;
+  }
+  
+  input#toggler1:checked ~ .gallery .labels label[for="toggler1"] img,
+  input#toggler2:checked ~ .gallery .labels label[for="toggler2"] img,
+  input#toggler3:checked ~ .gallery .labels label[for="toggler3"] img,
+  input#toggler4:checked ~ .gallery .labels label[for="toggler4"] img,
+  input#toggler5:checked ~ .gallery .labels label[for="toggler5"] img {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
